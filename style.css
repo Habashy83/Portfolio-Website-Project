@@ -12,7 +12,7 @@ body {
     border-left: 1px rgba(99, 99, 99, 0.5) solid;
     border-right: 1px rgb(99, 99, 99, 0.5) solid;
     margin: auto;
-    width: 840px;
+    max-width: 840px;
     margin: 0;
     padding: 0 20px 0 20px;
     color: rgb(5, 5, 5);
@@ -127,7 +127,7 @@ h3 {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    width: 450px;
+    max-width: 450px;
     min-width: 250px;
     margin-right: 50px;
 }
@@ -157,7 +157,7 @@ h3 {
 .projects .proj-container {
     display: flex;
     justify-content: space-between;
-    width: 750px;
+    max-width: 750px;
     margin: 0;
     padding-left: 30px;
     padding-right: 30px;
@@ -216,4 +216,61 @@ h5{
     align-items: center;
     padding-top: 3px;
     padding-left: 10px;
+}
+
+@media only screen and (max-width: 800px){
+
+    nav{
+        display: none;
+    }
+
+    .topBar{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    }
+
+    main{
+        flex-direction: column;
+        flex-shrink: 1;
+    }
+
+    .skills{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+    }
+
+    .proj-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects{
+        margin: 15px;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+        height:auto;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    h5{
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-right: 10px;
+        margin-left: 0;
+    }
+
+    .box{
+
+    }
+
+
 }
